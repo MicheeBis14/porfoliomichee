@@ -17,6 +17,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
+
+.all{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    /* padding: 10px; */
+
+}
 .corps{
     position: absolute;
     top: 50%;
@@ -29,15 +38,19 @@ body{
     justify-content: center;
     text-align: center;
     padding: 40px 20px;
+    color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(40deg, #aa396f,#6a1d15);
+
     /* background-color: red; */
 }
 .corps .msgAccueil p {
     margin-top:     10px;
-    background-color: aqua;
+    /* background-color: aqua; */
     justify-content: center;
 }
 .corps .msgAccueil.decouvert{
-    background-color: violet;
+    /* background-color: violet; */
     margin-top: 10px;
     height: 25%;
     width: 100%;
@@ -48,12 +61,19 @@ body{
 } 
 .corps .msgAccueil.decouvert > a {
     /* margin-top: 5%; */
-    background-color: aqua;
+    /* background-color: #fff; */
     border-radius: 15px;
-    border: 1px solid red;
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    /* font-weight: bold; */
+    
 
 
+}
+.msgAccueil.decouvert > a:hover{
+    background-color: #aa396f;
 }
 
 .msgAccueil.decouvert > a :hover{
@@ -69,15 +89,16 @@ body{
 
 /* --************************************************ EN-TETE ****************************************************-- */
 /* --************************************************ EN-TETE ****************************************************-- */
-.head{
+.all .head{
     position: fixed;
     left: 50%;
-    top: 15%;
+    top: 14%;
     height: 30%;
-    width: calc(100% - 10%);
+    width: 100%;
     /* text-align: center; */
     /* background-color: aqua; */
-    border: 1px solid red;
+    background: linear-gradient(40deg, #aa396f,#a40606);
+    border: 1px solid rgb(255, 255, 255);
     transform: translate(-50%,-45%);
     display: flex;
     overflow: hidden;
@@ -88,11 +109,11 @@ body{
 .head #photo { 
 position: absolute;
 left:  3%;
-top: 13%;
+top: 10%;
 height: 160px;
 width: 160px;
 border-radius: 50%;
-border: 1px solid green;
+/* border: 1px solid green; */
 overflow: hidden;
 
 
@@ -111,7 +132,7 @@ overflow: hidden;
     position: relative;
     left: 0%;
     top: 15%;
-    border: 1px solid red;
+    /* border: 1px solid rgb(0, 181, 15); */
     justify-content: center;
     overflow: hidden;
     /* text-align: center; */
@@ -126,16 +147,42 @@ overflow: hidden;
 
  .head .nav.data1 h1{
 
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    color: #fff;
     height: 30%;
     width: 100%;
 
  }
+ .nav.data1 .elmnt{
+    position: relative;
+    top: -15px;
+    margin: px 0px;
+    height: 45%;
+    width: 80%;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+    /* color: #fff; */
+ }
 
- .head .nav.data1 p {
+ .nav.data1 .elmnt.email{
+    /* background-color: #6a1d15; */
+    height: 35%;
+    margin-top: 2px;
+    padding: 8px 16px;
+    display: block;
+    /* color: #fff; */
+ }
+ .nav.data1 .elmnt.email a{
+    color: #fff;
+ }
+
+
+
+.nav.data1 .elmnt p {
     height: calc(100% - 30%);
     width: 100%;
-    border: 1px solid green;
+    color: #fff;
+    /* border: 1px solid green; */
     margin-top: 0%;
     display: block;
     padding: 10px 0px;
@@ -151,12 +198,26 @@ overflow: hidden;
 
  .head .nav.data2 .coord{
     height: 35%;
-    width: 100%;
-    border: 1px solid magenta;
-    margin: 10px;
+    /* width: 100%; */
+    /* border: 1px solid magenta; */
+    margin: 0px;
     overflow: hidden;
+    color: #fff;
+    /* display: block; */
+ }
+ 
+.data2 .coord.phone{
+    /* background-color: #aa396f; */
+    height: 30px;
+    width: 30%;
+    display: block;
+    color: #fff;
+    padding: 6px 0px 12px;
+ }
 
-
+ .head .nav.data2 .coord > a {
+    color: #fff;
+    margin: 5px;
  }
 
  .nav.data2 .coord.adr{
@@ -164,45 +225,225 @@ overflow: hidden;
     height: 50%;
  }
 .navv{
-    position:absolute;
+    position:fixed;
     /* background-color: rebeccapurple; */
-    border: 1px solid red;
-    top: 37%;
+    background: linear-gradient(40deg, #aa396f,#a40606);
+    border: 1px solid rgb(255, 255, 255);
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% - 10%);
-    height: 10%;
-    border: 1px solid goldenrod;
+    width: 100%;
+    height: 14%;
+    /* border: 1px solid goldenrod; */
     text-align: center;
     justify-content: center;
     overflow: hidden;
-    padding: 25px 35px;
+    padding: 10px 40px;
 }
 .navv a {
-    background-color: red;
-    padding:15px 20px;
+    /* background-color: red; */
+    padding:10px 10px;
     border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+
 }
 
 
 
-
-
-
-
 /* --************************************************ EN-TETE ****************************************************-- */
 /* --************************************************ EN-TETE ****************************************************-- */
 
+
+/* --************************************************ SECTION 1 ****************************************************-- */
 
 .inn{
-    position: absolute;
-    top: 45%;
-    height: 100px;
+    position: relative;
+    top: 30%;
+    height: 100%;
     width: 100%;
-    margin: auto;
-    background-color: aqua;
+    margin: 10px 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    overflow: hidden;
 
 }
+.inn .element{
+    position:   relative;
+    height: 100%;
+    width: 50%;
+    /* border:  1px solid green; */
+    padding: 10pX 5px;
+    /* color: black !important; */
+    background: #fff;
+    margin: 5px;
+
+
+}
+
+.inn .element .mydata{
+    position: relative;
+    height: 33%;
+    width: 100%;
+    border:  1px solid #fff;
+    /* margin: 5px; */
+    padding: 10px 49px;
+    /* text-align: center; */
+    justify-content: center;
+    color: #101010;
+    overflow: hidden;
+    padding: 10px 29px;
+    margin: 5px 0px;
+    background: #fff;
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+
+
+}
+.element .mydata .titre{
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    /* width: 30%;
+    height: 25%; */
+    /* border: 1px solid yellow; */
+    /* padding: 10px 40px; */
+}
+
+
+.element .mydata h1{
+
+    background-color: rgb(164, 6, 6);
+    width: 35%;
+    height: 40%;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    /* border: 1px solid magenta; */
+    color: #fff;
+}
+
+ .mydata .interet {
+    
+    width: 45% !important;
+    
+}
+.mydata ul{
+    margin: 10px 40px;
+}
+.mydata h3{
+    margin: 5px 25px;
+
+}
+.mydata .niveau{
+    position: absolute;
+    left: 30%;
+    top: 43px;
+    height: 80%;
+    width: 40%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.mydata .niveau .level{
+    position: relative;
+    top: -7px;
+    height: 17px;
+    width: 80%;
+    /* border:1px solid red; */
+    margin: 10px;
+    border-radius: 2px;
+    background-color: rgb(238, 230, 230);
+}
+
+.mydata .lang{
+    position: absolute;
+    top: 50px;
+    height: 55px;
+    width: 80%;
+    /* border: 1px solid yellow; */
+    overflow: hidden;
+    display: flex;
+    padding: 5px 10px;
+    
+}
+
+.mydata .lang .mesLangs{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #c5c5c5;
+    margin: 0px 20px;
+    overflow: hidden;
+
+}
+.mydata .lang .mesLangs > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.lang figcaption{
+    margin-top:15px;
+    /* background-color: red; */
+}
+
+
+ .niveau .level .lev{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: #d11235;
+    border-radius: 5px;
+ }
+ .niveau .level .lev.ps{
+    width: 70%;
+ }
+
+ .niveau .level .lev.htmll{
+    width: 50%;
+
+ }
+ .niveau .level .lev.cs{
+    width: 60%;
+
+ }
+ .niveau .level .lev.js{
+    width: 35%;
+ }
+ .niveau .level .lev.ph{
+    width: 55%;
+
+ }
+
+ .niveau .level .lev.svr{
+    width: 25%;
+
+ }
+
+
+
+
+/* --************************************************ SECTION 1 ****************************************************-- */
+
+/*--************************************************FOOTER ****************************************************-- */
+.all .foot{
+    position: relative;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    border: 1px solid yellow;
+    /* background-color: red;
+     */
+    background: linear-gradient(40deg, #aa396f,#a40606
+    );
+}
+
+/*--************************************************FOOTER ****************************************************-- */
+
+
+
+
+
 
 /* .add{
     position: absolute;
