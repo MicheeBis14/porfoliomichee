@@ -1,0 +1,219 @@
+*,*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* background-color: red; */
+    
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.corps{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: calc(100%-50%);
+    border: 1px solid red;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    /* background-color: red; */
+}
+.corps .msgAccueil p {
+    margin-top:     10px;
+    background-color: aqua;
+    justify-content: center;
+}
+.corps .msgAccueil.decouvert{
+    background-color: violet;
+    margin-top: 10px;
+    height: 25%;
+    width: 100%;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 30px;
+
+} 
+.corps .msgAccueil.decouvert > a {
+    /* margin-top: 5%; */
+    background-color: aqua;
+    border-radius: 15px;
+    border: 1px solid red;
+    padding: 10px 15px;
+
+
+}
+
+.msgAccueil.decouvert > a :hover{
+
+    background: green !important;
+    color: black;
+    background-color: #fff;
+    
+}
+
+
+/*  PAGE PORFOLIO */
+
+/* --************************************************ EN-TETE ****************************************************-- */
+/* --************************************************ EN-TETE ****************************************************-- */
+.head{
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    height: 30%;
+    width: calc(100% - 10%);
+    /* text-align: center; */
+    /* background-color: aqua; */
+    border: 1px solid red;
+    transform: translate(-50%,-45%);
+    display: flex;
+    overflow: hidden;
+    /* padding: 20px; */
+
+}
+
+.head #photo { 
+position: absolute;
+left:  3%;
+top: 13%;
+height: 160px;
+width: 160px;
+border-radius: 50%;
+border: 1px solid green;
+overflow: hidden;
+
+
+}
+.head #photo > img {
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+    /* clip-path: ellipse(50% 50%); */
+    /* border: 1px solid red; */
+}
+ .head .nav {
+    height: 70%;
+    width: 50%;
+    margin: 0px 30px;
+    position: relative;
+    left: 0%;
+    top: 15%;
+    border: 1px solid red;
+    justify-content: center;
+    overflow: hidden;
+    /* text-align: center; */
+    padding: 2px 10px;
+
+ }
+
+ .head .nav.data1 {
+    margin-left: 15%;
+
+ }
+
+ .head .nav.data1 h1{
+
+    border: 1px solid gray;
+    height: 30%;
+    width: 100%;
+
+ }
+
+ .head .nav.data1 p {
+    height: calc(100% - 30%);
+    width: 100%;
+    border: 1px solid green;
+    margin-top: 0%;
+    display: block;
+    padding: 10px 0px;
+
+ }
+
+ .head .nav.data1 p > a {
+    margin-top: 10px;
+    color: aqua;
+
+ }  
+
+
+ .head .nav.data2 .coord{
+    height: 35%;
+    width: 100%;
+    border: 1px solid magenta;
+    margin: 10px;
+    overflow: hidden;
+
+
+ }
+
+ .nav.data2 .coord.adr{
+    margin-top: 15px;
+    height: 50%;
+ }
+.navv{
+    position:absolute;
+    /* background-color: rebeccapurple; */
+    border: 1px solid red;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 10%);
+    height: 10%;
+    border: 1px solid goldenrod;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 25px 35px;
+}
+.navv a {
+    background-color: red;
+    padding:15px 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* --************************************************ EN-TETE ****************************************************-- */
+/* --************************************************ EN-TETE ****************************************************-- */
+
+
+.inn{
+    position: absolute;
+    top: 45%;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    background-color: aqua;
+
+}
+
+/* .add{
+    position: absolute;
+    top: 55%;
+    height: 40%;
+    width: 100%;
+    background-color: rebeccapurple;
+
+} */
+
+
+
+/*  PAGE PORFOLIO */
+
